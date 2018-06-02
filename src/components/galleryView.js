@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
 
 import { asyncComments } from "../actions/comments";
-import { GalleryInfo } from "./galleryInfo.js";
-import { GalleryBody } from "./galleryBody.js";
-import GalleryComments from "./comments.js";
+import { GalleryInfo } from "./GalleryInfo.js";
+import { GalleryBody } from "./GalleryBody.js";
+import GalleryComments from "./Comments.js";
 
 import "../css/gallery.css";
 
@@ -21,12 +21,14 @@ class GalleryView extends Component {
   render() {
     const { gallery, comments } = this.props;
     return (
+
       <div className="row">
         <div className="col-md-12">
           <Link className="gallery__home-link" to="/">
-            Home
+            <div className="logo"></div>'
           </Link>
         </div>
+
         <div className="col-md-8">
           <GalleryBody gallery={gallery} />
           <GalleryComments comments={comments} />
@@ -34,7 +36,10 @@ class GalleryView extends Component {
         <div className="col-md-4">
           <GalleryInfo gallery={gallery} />
         </div>
+
       </div>
+
+
     );
   }
 }

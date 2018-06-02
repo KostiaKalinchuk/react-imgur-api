@@ -1,11 +1,10 @@
 .gallery__home-link {
   display: block;
-  padding: 12px;
-  margin: 20px 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  padding: 25px;
+  margin-bottom: 20px;
   text-decoration: none;
+  background-color: #34373c;
+  color: white;
 }
 
 .gallery-info,
@@ -16,6 +15,9 @@
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  background-color: #34373c;
+  color: #fff;
+  font-size: 14px;
 }
 
 .gallery-info__tag {
@@ -40,6 +42,7 @@
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  background-color: grey;
 }
 
 .gallery-body-title {
@@ -47,7 +50,7 @@
 }
 
 .gallery-body__name {
-  color: orange;
+  color: grey;
 }
 
 .gallery-body__image {
@@ -79,6 +82,8 @@
   border-radius: 5px;
   margin-bottom: 20px;
   word-wrap: break-word;
+  background-color: #34373c;
+  color: white;
 }
 
 .gallery-comment__text {
@@ -89,7 +94,7 @@
 
 .gallery-comment__author {
   font-size: 14px;
-  color: #039be5;
+  color: darkgray;
 }
 
 .gallery-comment__info {
@@ -101,18 +106,15 @@
 .gallery-comment__info-text {
   font-size: 12px;
   margin-right: 10px;
-  color: orange;
+  color: darkgray;
   margin-bottom: 0;
 }
 
 .gallery-comment__button {
   margin-bottom: 20px;
   padding: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  text-align: center;
   cursor: pointer;
+  color: darkgray;
 }
 
 .gallery-comment__replies {

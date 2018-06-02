@@ -72,8 +72,8 @@ class ShowRepliesButton extends Component {
         className="gallery-comment__button"
       >
         {this.state.open
-          ? `Hide replies (${count})`
-          : `Show replies (${count})`}
+          ? `- Collapse`
+          : `+ ${count} replies`}
       </div>
     );
   }

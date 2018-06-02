@@ -5,8 +5,8 @@ import {withRouter} from "react-router-dom";
 import "../css/galleriesList.css";
 import {asyncGetGalleries} from "../actions/galleries";
 import {changeFilter} from "../actions/filter";
-import {GalleryFilter} from "./galleryFilter.js";
-import Post from "./post.js";
+import {GalleryFilter} from "./GalleryFilter.js";
+import Post from "./Post.js";
 
 class GalleriesList extends Component {
     constructor(props) {

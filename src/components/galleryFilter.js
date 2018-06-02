@@ -7,11 +7,10 @@ export const GalleryFilter = props => {
   return (
     <div className="filter__wrapper">
       <div className="logo"></div>
-      <div className="container">
         <div className="row">
           <div className="filter col-md-12">
             <div className="filter__section">
-              <label htmlFor="section">Select section:</label>
+              <label htmlFor="section">Select section</label>
               <select
                 id="section"
                 name="section"
@@ -24,7 +23,7 @@ export const GalleryFilter = props => {
               </select>
             </div>
             <div className="filter__section">
-              <label htmlFor="sort">Sort by:</label>
+              <label htmlFor="sort">Sort by</label>
               <select
                 id="sort"
                 name="sort"
@@ -39,7 +38,7 @@ export const GalleryFilter = props => {
             </div>
             {topSelected && (
               <div className="filter__section">
-                <label htmlFor="section">Select time range:</label>
+                <label htmlFor="section">Time range</label>
                 <select
                   id="window"
                   name="window"
@@ -56,7 +55,10 @@ export const GalleryFilter = props => {
             )}
           </div>
         </div>
+
+
       </div>
-    </div>
+
+
   );
 };

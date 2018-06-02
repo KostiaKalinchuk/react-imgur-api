@@ -5,9 +5,9 @@ import {composeWithDevTools} from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import Container from "./components/mainLayout.js";
-import GalleriesList from "./components/galleriesList";
-import GalleryView from "./components/galleryView.js";
+import Container from "./components/MainLayout.js";
+import GalleriesList from "./components/GalleriesList";
+import GalleryView from "./components/GalleryView.js";
 // import ButtonUp from "./components/buttonUp.js";
 import reducers from "./reducers";
 
