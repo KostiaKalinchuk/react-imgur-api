@@ -134,16 +134,13 @@ class GalleriesList extends Component {
                         return <Post key={post.id} post={post}/>;
                     })
                 ) : (
-                    <p>Please wait, while galleries are loading</p>
+                    <div id="page-preloader" className="preloader">
+                        <div className="loading"></div>
+                    </div>
                 )}
                 {this.state.load && (
                     <div className="loader">
                         <h3 className="loader__title">Loading...</h3>
-                        <img
-                            src="http://img35.laughinggif.com/pic/HTTP2kuZ2lmdHJ1bmsuY29tLzhwbTc2di5naWYlog.gif"
-                            alt="loading..."
-                            className="loader__image"
-                        />
                     </div>
                 )}
             </div>

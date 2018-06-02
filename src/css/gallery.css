@@ -1,0 +1,133 @@
+.gallery__home-link {
+  display: block;
+  padding: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.gallery-info,
+.gallery-body {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.gallery-info__tag {
+  margin-right: 10px;
+}
+
+.gallery-info__count {
+  color: #039be5;
+}
+
+.gallery-info__row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery-info__tag-wrapper {
+  margin: 0 5px;
+}
+
+.gallery-info__tag {
+  padding: 0 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.gallery-body-title {
+  font-size: 1.5em;
+}
+
+.gallery-body__name {
+  color: orange;
+}
+
+.gallery-body__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.gallery-body__image-wrapper {
+  margin-bottom: 20px;
+}
+
+.gallery-comments {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 30px 0;
+}
+
+.gallery-comment__container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.gallery-comment {
+  padding: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.gallery-comment__text {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.gallery-comment__author {
+  font-size: 14px;
+  color: #039be5;
+}
+
+.gallery-comment__info {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+.gallery-comment__info-text {
+  font-size: 12px;
+  margin-right: 10px;
+  color: orange;
+  margin-bottom: 0;
+}
+
+.gallery-comment__button {
+  margin-bottom: 20px;
+  padding: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gallery-comment__replies {
+  display: none;
+}
+
+.gallery-comment__replies_show {
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery-comment__replies-comment {
+  width: 70%;
+}
+
+.gallery-comment__replies-comment .gallery-comment__text {
+  border-bottom: none;
+}

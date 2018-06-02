@@ -6,9 +6,9 @@ import thunk from "redux-thunk";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 import Container from "./components/mainLayout.js";
-import GalleriesList from "./components/galleriesList.js";
+import GalleriesList from "./components/galleriesList";
 import GalleryView from "./components/galleryView.js";
-import ButtonUp from "./components/buttonUp.js";
+// import ButtonUp from "./components/buttonUp.js";
 import reducers from "./reducers";
 
 import "./css/normalize.css";
@@ -28,7 +28,7 @@ class App extends Component {
                 <Provider store={store}>
                     <Router>
                         <Container>
-                            <ButtonUp/>
+                            {/*<ButtonUp/>*/}
                             <Route exact path="/" component={GalleriesList}/>
                             <Route path="/gallery/:galleryId" component={GalleryView}/>
                         </Container>

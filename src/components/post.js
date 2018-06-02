@@ -12,26 +12,36 @@ const Post = ({ post }) => (
 {/*<div>{console.log(post.link)}</div>*/}
 
 
-          <div className="post__image">
-              {(post.images &&
-                  post.images[0].animated && (
-                      <video preload="auto" autoPlay="autoplay" loop="loop" height="250px" width="250px">
-                        <source src={post.images[0].mp4} type="video/mp4" />
-                      </video>
-                  )) ||
+          <img
+              className="post__image"
+              src={
+                  post.cover
+                      ? `http://i.imgur.com/${post.cover}b.jpg`
+                      : `http://i.imgur.com/${post.id}b.jpg`
+              }
+          />
 
-              (post.images && (
-                  <img src={post.images[0].link} alt={post.title} height="250px" width="250px"/>
-              )) || <img src={post.link} alt={post.title} height="250px" width="250px"/>}
-          </div>
+          {/*<div className="post__image">*/}
+              {/*{(post.images &&*/}
+                  {/*post.images[0].animated && (*/}
+                      {/*<video preload="auto" autoPlay="autoplay" loop="loop" height="250px" width="250px">*/}
+                        {/*<source src={post.images[0].mp4} type="video/mp4" />*/}
+                      {/*</video>*/}
+                  {/*)) ||*/}
 
----
+              {/*(post.images && (*/}
+                  {/*<img src={post.images[0].link} alt={post.title} height="250px" width="250px"/>*/}
+              {/*)) || <img src={post.link} alt={post.title} height="250px" width="250px"/>}*/}
+          {/*</div>*/}
+
         </div>
-        <p className="post__title">{post.title}</p>
-        <div className="post__statistic">
-          <p>{post.views} views</p>
-          <p>{post.points} points</p>
-        </div>
+
+        {/*<p className="post__title">{post.title}</p>*/}
+          {/*<div className="post__statistic">*/}
+              {/*<p>{post.views} views</p>*/}
+              {/*<p>{post.points} points</p>*/}
+          {/*</div>*/}
+
       </div>
     </Link>
   </div>

@@ -1,0 +1,21 @@
+.buttonTop {
+  position: fixed;
+  display: inline-block;
+  right: 30px;
+  bottom: 30px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s, background-color 0.5s;
+}
+
+.buttonTop:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.buttonTop_show {
+  opacity: 1;
+}

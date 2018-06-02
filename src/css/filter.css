@@ -1,0 +1,36 @@
+.filter__wrapper {
+  position: fixed;
+  /*float: right;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 2;
+  background: #34373c;
+  /*border-bottom: 1px solid rgba(160, 160, 160, 0.2);*/
+  /*background: linear-gradient(to top, #fff, #efefef, #fff);*/
+}
+
+.logo {
+  float: left;
+  background: url(../img/ImgurLogo.svg) center center no-repeat;
+  width: 87px;
+  height: 34px;
+  margin-left: 50px;
+}
+
+
+.filter {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.filter__section:not(:last-child) {
+  margin-right: 50px;
+}
+
+.filter__section label {
+  margin-right: 10px;
+}
