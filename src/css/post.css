@@ -21,10 +21,6 @@
     text-decoration: none;
 }
 
-/*.post__image-container:hover .post__image {*/
-/*transform: scale(1.5);*/
-/*}*/
-
 .post__title {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(160, 160, 160, 0.2);
