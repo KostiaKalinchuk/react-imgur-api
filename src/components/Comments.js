@@ -20,7 +20,7 @@ export default class GalleryComments extends Component {
                   </p>
                 </div>
               </div>
-              {comment.children.length && (
+              {(comment.children.length && (
                 <div className="gallery-comment__replies-container">
                   <ShowRepliesButton count={comment.children.length} />
                   <div className="gallery-comments gallery-comment__replies">
@@ -41,7 +41,8 @@ export default class GalleryComments extends Component {
                     })}
                   </div>
                 </div>
-              ) || " "}
+              )) ||
+                " "}
             </div>
           );
         })}
@@ -71,9 +72,7 @@ class ShowRepliesButton extends Component {
         onClick={e => this.showReplies(e)}
         className="gallery-comment__button"
       >
-        {this.state.open
-          ? `- Collapse`
-          : `+ ${count} replies`}
+        {this.state.open ? `- Collapse` : `+ ${count} replies`}
       </div>
     );
   }

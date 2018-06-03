@@ -1,7 +1,11 @@
 const API_URL = "https://api.imgur.com/3/gallery/";
 
-export const asyncGetGalleries = ({section, sort, window, page}) => dispatch =>
-{
+export const asyncGetGalleries = ({
+  section,
+  sort,
+  window,
+  page
+}) => dispatch => {
   const url = `${API_URL}/${section}/${sort}/${window}/${page}?album_previews=true`;
   fetch(url, {
     async: true,
