@@ -25,7 +25,7 @@ class GalleryView extends Component {
       <div className="row">
         <div className="col-md-12">
           <Link className="gallery__home-link" to="/">
-            <div className="logo"></div>'
+            <div className="logo"></div>.
           </Link>
           <GalleryBody gallery={gallery} />
           <GalleryComments comments={comments} />

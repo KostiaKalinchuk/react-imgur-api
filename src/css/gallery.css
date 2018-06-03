@@ -64,6 +64,11 @@
   margin-bottom: 20px;
 }
 
+.gallery-body__image-description{
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+}
+
 .gallery-comments {
   display: flex;
   flex-flow: column nowrap;
@@ -111,7 +116,7 @@
 }
 
 .gallery-comment__button {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 5px;
   cursor: pointer;
   color: darkgray;

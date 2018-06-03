@@ -36,7 +36,7 @@ export const GalleryFilter = props => {
                             {userSelected && <option value="rising">Rising</option>}
                         </select>
                     </div>
-                    {topSelected && (
+
                         <div className="filter__section">
                             <label htmlFor="section">Time range</label>
                             <select
@@ -52,7 +52,7 @@ export const GalleryFilter = props => {
                                 <option value="all">All</option>
                             </select>
                         </div>
-                    )}
+
                 </div>
             </div>
         </div>
