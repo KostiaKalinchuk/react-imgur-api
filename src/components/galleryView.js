@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
 
 import { asyncComments } from "../actions/comments";
-import { GalleryInfo } from "./GalleryInfo.js";
 import { GalleryBody } from "./GalleryBody.js";
 import GalleryComments from "./Comments.js";
 
 import "../css/gallery.css";
 
 class GalleryView extends Component {
+
   componentDidMount() {
     this.props.getComments(this.props.gallery.id);
   }
@@ -27,19 +27,10 @@ class GalleryView extends Component {
           <Link className="gallery__home-link" to="/">
             <div className="logo"></div>'
           </Link>
-        </div>
-
-        <div className="col-md-8">
           <GalleryBody gallery={gallery} />
           <GalleryComments comments={comments} />
         </div>
-        <div className="col-md-4">
-          <GalleryInfo gallery={gallery} />
-        </div>
-
       </div>
-
-
     );
   }
 }

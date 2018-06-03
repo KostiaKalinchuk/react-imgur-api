@@ -1,4 +1,5 @@
 import React from "react";
+import { GalleryInfo } from "./GalleryInfo.js";
 
 export const GalleryBody = props => {
   const { gallery } = props;
@@ -34,6 +35,7 @@ export const GalleryBody = props => {
               <p className="gallery-body__image-description">
                 {image.description}
               </p>
+
             </div>
           );
         })
@@ -45,6 +47,8 @@ export const GalleryBody = props => {
       {gallery.description && (
         <p className="gallery-body__description">{gallery.description}</p>
       )}
+        <GalleryInfo gallery={gallery} />
     </div>
+
   );
 };

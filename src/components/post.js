@@ -41,6 +41,7 @@ const Post = ({ post }) => (
           <div className="post__statistic">
               <p>{post.views} views</p>
               <p>{post.points} points</p>
+              <p>Comments count: {post.comment_count}</p>
           </div>
           </div>
 

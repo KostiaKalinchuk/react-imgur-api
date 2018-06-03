@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 //
-// import "./css/normalize.css";
+// import "./css/reset.css";
 // import "./css/framework.css";
 // import "./css/app.css";
 

@@ -8,10 +8,9 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Container from "./components/MainLayout.js";
 import GalleriesList from "./components/GalleriesList";
 import GalleryView from "./components/GalleryView.js";
-// import ButtonUp from "./components/buttonUp.js";
 import reducers from "./reducers";
 
-import "./css/normalize.css";
+import "./css/reset.css";
 import "./css/framework.css";
 import "./css/app.css";
 import './App.css';
@@ -28,7 +27,6 @@ class App extends Component {
                 <Provider store={store}>
                     <Router>
                         <Container>
-                            {/*<ButtonUp/>*/}
                             <Route exact path="/" component={GalleriesList}/>
                             <Route path="/gallery/:galleryId" component={GalleryView}/>
                         </Container>
