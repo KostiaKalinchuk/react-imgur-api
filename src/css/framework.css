@@ -17,9 +17,9 @@ html {
   box-sizing: inherit;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
+/*@-ms-viewport {*/
+  /*width: device-width;*/
+/*}*/
 
 article,
 aside,

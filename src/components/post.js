@@ -36,11 +36,13 @@ const Post = ({ post }) => (
 
         </div>
 
-        {/*<p className="post__title">{post.title}</p>*/}
-          {/*<div className="post__statistic">*/}
-              {/*<p>{post.views} views</p>*/}
-              {/*<p>{post.points} points</p>*/}
-          {/*</div>*/}
+          <div className="post__info">
+        <p className="post__title">{post.title}</p>
+          <div className="post__statistic">
+              <p>{post.views} views</p>
+              <p>{post.points} points</p>
+          </div>
+          </div>
 
       </div>
     </Link>
